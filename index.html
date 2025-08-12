@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriBox AI — Personalized Nutrition, Powered by AI</title>
+  <meta name="description" content="NutriBox AI delivers personalized meal plans, macro tracking, and smart grocery lists—designed by AI and tuned to your goals.">
+  <meta property="og:title" content="NutriBox AI">
+  <meta property="og:description" content="Personalized nutrition, powered by AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nutriboxai.com/">
+  <meta property="og:image" content="https://nutriboxai.com/assets/og-image.png">
+  <link rel="icon" href="/assets/favicon.ico">
+  <style>
+    :root{--bg:#0e0f12;--card:#151821;--text:#f2f5f7;--muted:#a9b0b7;--accent:#62e6a6;--accent-2:#4ad2ff;--outline:rgba(255,255,255,0.08)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.5}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(14,15,18,.7);backdrop-filter:saturate(120%) blur(8px);z-index:50;border-bottom:1px solid var(--outline)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-block}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#07110b;border:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    .cta:hover{opacity:.95}
+    .hero{padding:80px 0 40px;border-bottom:1px solid var(--outline)}
+    .hero h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:0 0 14px}
+    .hero p{color:var(--muted);font-size:clamp(16px,2.5vw,20px);max-width:750px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid var(--outline);border-radius:14px;padding:18px}
+    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-size:12px}
+    h2{margin-top:40px;margin-bottom:12px;font-size:28px}
+    .pill{display:inline-block;border:1px solid var(--outline);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    footer{border-top:1px solid var(--outline);margin-top:40px}
+    .muted{color:var(--muted)}
+    .price{font-size:36px;font-weight:800;margin:6px 0}
+    .check{margin-right:8px}
+    .row{display:flex;flex-wrap:wrap;gap:16px}
+    form{display:flex;gap:10px;flex-wrap:wrap}
+    input[type="email"]{flex:1;min-width:220px;padding:12px;border-radius:10px;border:1px solid var(--outline);background:#0c0d10;color:var(--text)}
+    input[type="email"]::placeholder{color:#6f7680}
+    .small{font-size:12px}
+    .note{border-left:3px solid var(--accent);padding:10px 12px;background:#0c1411;border-radius:8px}
+    .two{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="logo"></span>NutriBox AI</div>
+    <a class="pill" href="#waitlist">Join waitlist</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="kicker">Launching soon</p>
+    <h1>Personalized nutrition, powered by AI.</h1>
+    <p>NutriBox AI builds meal plans and grocery lists around your goals, preferences, allergies, and budget. Simple, science-aware, and actually useful.</p>
+    <div class="row" style="margin-top:18px">
+      <a class="cta" href="#waitlist">Get early access</a>
+      <a class="pill" href="#how-it-works">How it works</a>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><strong>AI meal plans</strong><br><span class="muted">Daily and weekly plans that adapt to your macro targets, cuisine likes, and time constraints.</span></div>
+      <div class="card"><strong>Smart grocery lists</strong><br><span class="muted">Auto-compiled lists grouped by aisle, with swaps for out-of-stock items.</span></div>
+      <div class="card"><strong>Macro & micronutrient tracking</strong><br><span class="muted">Track calories, macros, and key micronutrients with simple, readable charts.</span></div>
+      <div class="card"><strong>Allergy & diet aware</strong><br><span class="muted">Respect vegan, halal, kosher, gluten-free, and allergy constraints by default.</span></div>
+      <div class="card"><strong>Budget mode</strong><br><span class="muted">Plan around a weekly spend target and get price-conscious ingredient alternatives.</span></div>
+      <div class="card"><strong>API for partners</strong><br><span class="muted">Integrate recommendations into your app or coaching workflow.</span></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="kicker">Early Access</div>
+        <div class="price">Free</div>
+        <div class="muted">Limited spots while we validate features.</div>
+        <ul>
+          <li><span class="check">✓</span>Full planner</li>
+          <li><span class="check">✓</span>Grocery lists</li>
+          <li><span class="check">✓</span>Basic tracking</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="kicker">Pro</div>
+        <div class="price">£9/mo</div>
+        <div class="muted">For individuals who want more control.</div>
+        <ul>
+          <li><span class="check">✓</span>Macro targets & history</li>
+          <li><span class="check">✓</span>Micronutrient focus</li>
+          <li><span class="check">✓</span>Export & share</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="kicker">Teams</div>
+        <div class="price">Custom</div>
+        <div class="muted">APIs and bulk licensing for partners.</div>
+        <ul>
+          <li><span class="check">✓</span>API access</li>
+          <li><span class="check">✓</span>Priority support</li>
+          <li><span class="check">✓</span>SLA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="waitlist">
+    <h2>Join the waitlist</h2>
+    <p class="muted">No spam. You’ll get product updates and an invite when we’re ready.</p>
+    <form action="https://formspree.io/f/mwkggqyo" method="POST">
+      <input type="email" name="email" placeholder="you@domain.com" required>
+      <button class="cta" type="submit">Notify me</button>
+    </form>
+    <p class="small muted">We use Formspree’s free tier for email collection. Swap this with your own provider anytime.</p>
+    <div class="note small">By joining, you agree to our <a href="/privacy.html">Privacy Policy</a>.</div>
+  </section>
+
+  <section id="about">
+    <h2>About NutriBox AI</h2>
+    <p>NutriBox AI Ltd is a UK-based company building practical, evidence-aware nutrition software. We combine food databases with modern AI to recommend meals that match your health goals and lifestyle.</p>
+    <p>Contact: <a href="mailto:nutribox.mcr@gmail.com">nutribox.mcr@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid" style="padding:20px 0">
+      <div>
+        <div class="brand"><span class="logo"></span>NutriBox AI</div>
+        <p class="muted">© 2025 NutriBox AI Ltd. All rights reserved.</p>
+      </div>
+      <div>
+        <div class="kicker">Contact</div>
+        <p class="muted"><a href="mailto:nutribox.mcr@gmail.com">nutribox.mcr@gmail.com</a></p>
+      </div>
+      <div>
+        <div class="kicker">Social</div>
+        <p class="muted"><a href="https://x.com" target="_blank" rel="noopener">X</a> · <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>console.log("NutriBox AI site loaded")</script>
+</body>
+</html>
